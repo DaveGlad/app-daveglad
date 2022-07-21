@@ -1,0 +1,39 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body {
+  font-family: var(--body-font) !important;
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/*========== CLASS CSS ==========*/
+.section {
+  padding: 4rem 0 2rem;
+}
+
+
+/*========== LAYOUT ==========*/
+.bd-container {
+  max-width: 1100px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+
+/*========== MEDIA QUERIES ==========*/
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {}

@@ -1,0 +1,50 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+ul,
+ol,
+p {
+  margin: 0;
+}
+
+p {
+  margin-bottom: var(--mb-3);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*========== Link ==========*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--first-color);
+}
