@@ -1,10 +1,10 @@
 /*===== VARIABLES CSS =====*/
 :root {
   /*========== Colors ==========*/
-  --color-primary: #0E5186;
+  --color-primary: #161519;
   --color-secondary: #34B3F1;
-  --title-color: #393939;
-  --text-color: #5a5a5a;
+  --title-color: #202121;
+  --text-color: #000;
   --text-color-light: #A6A6A6;
   --success-color: #FBFEFD;
   --info-color: #FFFFFF;

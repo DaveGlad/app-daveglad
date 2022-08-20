@@ -2,6 +2,8 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -14,12 +16,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-ul,
-ol,
-p {
-  margin: 0;
-}
 
 p {
   margin-bottom: var(--mb-3);

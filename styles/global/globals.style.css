@@ -1,6 +1,14 @@
 /*===== GOOGLE FONTS =====*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* @font-face {
+  font-family: 'montserratthin';
+  src: url('../../src/assets/fonts/montserrat/montserrat.woff2') format('woff2'),
+    url('../../src/assets/fonts/montserrat/montserrat.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
 body {
   font-family: var(--body-font) !important;
@@ -24,6 +32,10 @@ body {
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+}
+
+h1 {
+  color: var(--title-color);
 }
 
 

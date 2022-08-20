@@ -1,0 +1,49 @@
+.header {
+  /* position: sticky; */
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #F4F7F6;
+  padding: 0 5%;
+}
+
+.menu {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ======Layout======= */
+.nav {
+  flex: 2.5;
+}
+
+.right__box,
+.box__left {
+  flex: 1;
+}
+
+/* ======box__left====== */
+.box__left {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  width: 100px;
+  text-align: center;
+}
+
+/* =====Navigations===== */
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+}
+
+.right__box .nav__list {
+  justify-content: flex-end;
+}
