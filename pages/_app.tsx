@@ -10,9 +10,9 @@ import Layout from "@components/layout";
 
 //!STYLES
 import "../styles/resets/reset.style.css";
-import "../styles/global/globals.style.css";
-import "../styles/colors/colors.style.css";
 import "../styles/variables/variables.style.css";
+import "../styles/colors/colors.style.css";
+import "../styles/global/globals.style.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
