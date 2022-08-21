@@ -85,16 +85,16 @@ export default function Scene({ setBg }: Props) {
   return (
     <>
       <PerspectiveCamera makeDefault position={[0, 0, 4]} fov={40}>
-        <a.ambientLight intensity={ambient} />
+        {/* <a.ambientLight intensity={ambient} />
         <a.pointLight
           ref={light}
           position-z={-15}
           intensity={env}
           color="#F8C069"
-        />
+        /> */}
       </PerspectiveCamera>
       <Suspense fallback={null}>
-        <a.mesh
+        {/* <a.mesh
           ref={sphere}
           scale={wobble}
           onPointerOver={() => setHovered(true)}
@@ -118,7 +118,7 @@ export default function Scene({ setBg }: Props) {
             clearcoatRoughness={0}
             metalness={0.1}
           />
-        </a.mesh>
+        </a.mesh> */}
         <Environment preset="warehouse" />
         <ContactShadows
           rotation={[Math.PI / 2, 0, 0]}

@@ -8,7 +8,7 @@ import Button from "@ui/button";
 import Title from "@ui/title/title";
 import Conatiner from "@ui/container";
 import SocialIcons from "@components/socialIcons";
-import Scene from "@components/sphere";
+import Scene from "@components/sphere/sphere";
 
 //!STYLE
 import s from "./assets/hero.module.css";
