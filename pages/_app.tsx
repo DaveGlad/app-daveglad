@@ -7,13 +7,13 @@ import { Provider } from "react-redux";
 
 //!COMPONENTS
 import Layout from "@components/layout";
+import { MouseTracker } from "@components/mouseTracker";
 
 //!STYLES
 import "../styles/resets/reset.style.css";
 import "../styles/variables/variables.style.css";
 import "../styles/colors/colors.style.css";
 import "../styles/global/globals.style.css";
-import { MouseTracker } from "@components/mouseTracker";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
