@@ -14,7 +14,6 @@ import Scene from "@components/sphere";
 import s from "./assets/hero.module.css";
 import { ScrollAnotation } from "@components/indicatorScroll";
 import { Canvas } from "@react-three/fiber";
-import Overlay from "@components/sphere/j";
 
 const Hero = () => {
   const [{ background, fill }, set] = useSpring(

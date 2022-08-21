@@ -9,6 +9,7 @@ import {
 } from "@react-three/drei";
 import { useSpring } from "@react-spring/core";
 import { a } from "@react-spring/three";
+import { Interface } from "readline";
 
 // React-spring animates native elements, in this case <mesh/> etc,
 // but it can also handle 3rd–party objs, just wrap them in "a".
@@ -21,13 +22,22 @@ interface Props {
 export default function Scene({ setBg }: Props) {
   const sphere = useRef<any>();
   const light = useRef<any>();
-  const [mode, setMode] = useState<boolean>(false);
-  const [down, setDown] = useState<boolean>(false);
-  const [hovered, setHovered] = useState<boolean>(false);
+  const [mode, setMode] = useState<any>(false);
+  const [down, setDown] = useState(false);
+  const [hovered, setHovered] = useState<any>(false);
+
+  // Change cursor on hovered state
+  // useEffect(() => {
+  //   document.body.style.cursor = hovered
+  //     ? "none"
+  //     : `url('data:image/svg+xml;base64,${btoa(
+  //         '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="10" fill="#E8B059"/></svg>'
+  //       )}'), auto`;
+  // }, [hovered]);
 
   // Make the bubble float and follow the mouse
   // This is frame-based animation, useFrame subscribes the component to the render-loop
-  useFrame((state) => {
+  useFrame((state: any) => {
     light.current.position.x = state.mouse.x * 20;
     light.current.position.y = state.mouse.y * 20;
     if (sphere.current) {
@@ -63,13 +73,15 @@ export default function Scene({ setBg }: Props) {
   return (
     <>
       <PerspectiveCamera makeDefault position={[0, 0, 4]} fov={40}>
-        <a.ambientLight intensity={ambient} />
-        <a.pointLight
-          ref={light}
-          position-z={-15}
-          intensity={env}
-          color="#F8C069"
-        />
+        <Suspense fallback={null}>
+          <a.ambientLight intensity={ambient} />
+          <a.pointLight
+            ref={light}
+            position-z={-15}
+            intensity={env}
+            color="#F8C069"
+          />
+        </Suspense>
       </PerspectiveCamera>
       <Suspense fallback={null}>
         <a.mesh
