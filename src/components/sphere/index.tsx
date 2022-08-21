@@ -1,6 +1,13 @@
 import * as THREE from "three";
-import React, { Suspense, useEffect, useState, useRef, FC } from "react";
-import { useFrame } from "@react-three/fiber";
+import React, {
+  Suspense,
+  useEffect,
+  useState,
+  useRef,
+  FC,
+  ForwardRefExoticComponent,
+} from "react";
+import { AmbientLightProps, useFrame } from "@react-three/fiber";
 import {
   PerspectiveCamera,
   Environment,
@@ -10,6 +17,11 @@ import {
 import { useSpring } from "@react-spring/core";
 import { a } from "@react-spring/three";
 import { Interface } from "readline";
+import {
+  ComponentPropsWithRef,
+  ComponentType,
+  RefProp,
+} from "@react-spring/types";
 
 // React-spring animates native elements, in this case <mesh/> etc,
 // but it can also handle 3rd–party objs, just wrap them in "a".
@@ -73,15 +85,13 @@ export default function Scene({ setBg }: Props) {
   return (
     <>
       <PerspectiveCamera makeDefault position={[0, 0, 4]} fov={40}>
-        <Suspense fallback={null}>
-          <a.ambientLight intensity={ambient} />
-          <a.pointLight
-            ref={light}
-            position-z={-15}
-            intensity={env}
-            color="#F8C069"
-          />
-        </Suspense>
+        <a.ambientLight intensity={ambient} />
+        <a.pointLight
+          ref={light}
+          position-z={-15}
+          intensity={env}
+          color="#F8C069"
+        />
       </PerspectiveCamera>
       <Suspense fallback={null}>
         <a.mesh
