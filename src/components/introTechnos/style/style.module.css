@@ -1,0 +1,14 @@
+.technos {
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.technos div {
+  font-size: 27px;
+}

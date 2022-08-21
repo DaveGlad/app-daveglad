@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: var(--padding-2);
 }
 
 .row {
@@ -18,13 +19,13 @@
 .hero__content {
   /* border: 1px solid black; */
   width: 100%;
-  height: 70vh;
+  /* height: 70vh; */
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  /* padding: 5%; */
+  padding: 4%;
   /* background: #EFEFEF; */
   /* background: #fff;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; */
@@ -41,7 +42,7 @@
 } */
 
 .title {
-  font-size: 3.5em;
+  font-size: 3em;
   line-height: 1.1;
 }
 
@@ -51,6 +52,6 @@
 
 .canvas {
   width: 100% !important;
-  height: 100% !important;
-  overflow: hidden !important;
+  height: 80vh !important;
+  background: transparent !important;
 }

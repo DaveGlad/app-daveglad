@@ -14,6 +14,7 @@ import Scene from "@components/sphere/sphere";
 import s from "./assets/hero.module.css";
 import { ScrollAnotation } from "@components/indicatorScroll";
 import { Canvas } from "@react-three/fiber";
+import IntroTechnologies from "@components/introTechnos";
 
 const Hero = () => {
   const [{ background, fill }, set] = useSpring(
@@ -27,7 +28,8 @@ const Hero = () => {
           <div className={s.hero__content}>
             <div className={s.infos}>
               <Title className={s.title}>
-                We build top-notch custom web and mobile solutions !
+                Developpeur web et mobile chez Digital Brains Agency{" "}
+                <span>.</span>
               </Title>
               <p className={s.description}>
                 Hire a dedicated skilled team to design and develop your custom{" "}
@@ -52,10 +54,9 @@ const Hero = () => {
             </Canvas>
           </div>
         </div>
-      </Conatiner>
-      {/* <a.main style={{ background }}>
 
-      </a.main> */}
+        <IntroTechnologies />
+      </Conatiner>
 
       <SocialIcons />
 
