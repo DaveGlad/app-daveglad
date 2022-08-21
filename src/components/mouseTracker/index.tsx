@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, FC } from "react";
-// import * as THREE from "three";
+const THREE = require("three");
+
 //!STYLE
 import s from "./assets/style.module.css";
-const THREE = require("three");
 
 export const MouseTracker: FC = () => {
   const ref = useRef<HTMLDivElement>(null);
