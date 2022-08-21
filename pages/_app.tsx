@@ -13,12 +13,14 @@ import "../styles/resets/reset.style.css";
 import "../styles/variables/variables.style.css";
 import "../styles/colors/colors.style.css";
 import "../styles/global/globals.style.css";
+import { MouseTracker } from "@components/mouseTracker";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <Layout>
         <Component {...pageProps} />
+        <MouseTracker />
       </Layout>
     </Provider>
   );

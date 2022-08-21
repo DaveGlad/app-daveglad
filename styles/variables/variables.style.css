@@ -6,7 +6,8 @@
   --title-color: var(--title-color);
   --text-color: var(--text-color);
   --text-color-light: #A6A6A6;
-  --body-color: #FBFEFD;
+  --body-color: #f0f0f0;
+  /* --body-color: #FBFEFD; */
   --container-color: #FFFFFF;
 
   /*========== Font and typography ==========*/

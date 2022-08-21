@@ -1,0 +1,26 @@
+.cursor {
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 15px;
+  height: 15px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 50%;
+  border: 1px solid var(--text-color);
+  background: transparent;
+  transform: translate(-50%, -55%);
+  /* overflow: hidden; */
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, border 0.3s;
+
+
+}
+
+/*
+ &.active {
+   width: 200px;
+   height: 200px;
+   border: 2px solid #fff;
+ } */

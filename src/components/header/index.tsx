@@ -3,6 +3,7 @@ import React, { FC } from "react";
 //!NEXT
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
 //!COMPONENTS
 import Conatiner from "@ui/container";
@@ -16,6 +17,15 @@ import { FiSearch } from "react-icons/fi";
 //!STYLE
 import s from "./assets/header.module.css";
 
+import { Suspense } from "react";
+
+// import SoundBar from "@components/soundBar";
+
+const SoundBar = dynamic(() => import("@components/soundBar"), {
+  suspense: true,
+  ssr: false,
+});
+
 const Header: FC = () => {
   return (
     <header className={s.header}>
@@ -28,6 +38,10 @@ const Header: FC = () => {
           <div className={s.search}>
             <FiSearch className={s.icon__search} size={17} />
           </div>
+
+          <Suspense fallback={`Loading...`}>
+            <SoundBar />
+          </Suspense>
         </div>
 
         <nav className={s.nav}>
@@ -65,7 +79,7 @@ const Header: FC = () => {
             </li>
             <li className={s.nav__item}>
               <Link href="" aria-disabled>
-                <a>/</a>
+                <a>|</a>
               </Link>
             </li>
             <li className={s.nav__item}>

@@ -1,6 +1,9 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
+
+//!COMPONENTS
+import ScreenHome from "src/screens/home";
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +14,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main></main>
+      <main>
+        <ScreenHome />
+      </main>
     </Fragment>
   );
 };

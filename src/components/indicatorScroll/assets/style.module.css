@@ -1,0 +1,44 @@
+.container {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+  transform-origin: center left;
+  transform: rotateZ(90deg) translate(-130px, -21px);
+  user-select: none;
+}
+
+.text {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.bar {
+  position: relative;
+  width: 80px;
+  height: 1px;
+  background-color: #555;
+  overflow: hidden;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  animation: animateLine 4s linear infinite;
+}
+
+@keyframes animateLine {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 200%;
+  }
+}
