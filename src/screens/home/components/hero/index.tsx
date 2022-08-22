@@ -28,14 +28,23 @@ const Hero = () => {
           <div className={s.hero__content}>
             <div className={s.infos}>
               <Title className={s.title}>
-                Developpeur web et mobile chez Digital Brains Agency{" "}
-                <span>.</span>
+                <div className={s.content__span}>
+                  <span>Developpeur web &</span>
+                </div>
+                <div className={s.content__span}>
+                  <span>mobile chez Digital</span>{" "}
+                </div>
+                <div className={s.content__span}>
+                  <span>
+                    Brains Agency <strong>.</strong>
+                  </span>
+                </div>
               </Title>
               <p className={s.description}>
-                Hire a dedicated skilled team to design and develop your custom{" "}
-                software, website,
-                <br /> or mobile application software, website, or mobile
-                application
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+                asperiores aliquid consequuntur, modi numquam esse libero
+                veritatis quia beatae culpa, incidunt corporis eum obcaecati
+                quisquam eligendi veniam et minima rem!
               </p>
 
               <Button>Contactez-moi</Button>

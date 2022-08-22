@@ -52,22 +52,34 @@ const Header: FC = () => {
               </Link>
             </li>
             <li className={s.nav__item}>
-              <Link href="">À propos de moi</Link>
+              <Link href="">
+                <a>About</a>
+              </Link>
             </li>
             <li className={s.nav__item}>
-              <Link href="">Services</Link>
+              <Link href="">
+                <a>Services</a>
+              </Link>
             </li>
             <li className={s.nav__item}>
-              <Link href="">Community</Link>
+              <Link href="">
+                <a>Community</a>
+              </Link>
             </li>
             <li className={s.nav__item}>
-              <Link href="">Blog</Link>
+              <Link href="">
+                <a>Blog</a>
+              </Link>
             </li>
             <li className={s.nav__item}>
-              <Link href="">Tutoriels</Link>
+              <Link href="">
+                <a>Tutoriels</a>
+              </Link>
             </li>
             <li className={s.nav__item}>
-              <Link href="">Contact</Link>
+              <Link href="">
+                <a>Contact</a>
+              </Link>
             </li>
           </ul>
         </nav>

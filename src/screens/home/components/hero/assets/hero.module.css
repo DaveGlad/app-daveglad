@@ -43,15 +43,47 @@
 
 .title {
   font-size: 3em;
-  line-height: 1.1;
+  line-height: 1.2;
+}
+
+.title span {
+  display: block;
+  transform: translateY(25px);
+  opacity: 0;
+  animation: animate-title 1400ms forwards;
+}
+
+.content__span {
+  overflow: hidden;
+}
+
+.content__span:nth-of-type(2)span {
+  animation-delay: 250ms;
+}
+
+.content__span:nth-of-type(3)span {
+  animation-delay: 500ms;
 }
 
 .description {
-  margin: var(--margin-3) 0;
+  margin: var(--margin-2) 0;
 }
 
 .canvas {
   width: 100% !important;
   height: 80vh !important;
   background: transparent !important;
+
+}
+
+@keyframes animate-title {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
