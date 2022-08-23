@@ -57,11 +57,11 @@
   overflow: hidden;
 }
 
-.content__span:nth-of-type(2)span {
+.content__span:nth-of-type(2) span {
   animation-delay: 250ms;
 }
 
-.content__span:nth-of-type(3)span {
+.content__span:nth-of-type(3) span {
   animation-delay: 500ms;
 }
 
