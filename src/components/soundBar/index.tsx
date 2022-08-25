@@ -33,7 +33,7 @@ const SoundBar = () => {
       <div className={s.line} style={isPlay} />
       <div className={s.line} style={isPlay} />
 
-      <audio src={"../../assets/audio/u-said-it-v13-1167.mp3"} ref={ref} loop />
+      <audio src="/u-said-it-v13-1167.mp3" ref={ref} loop />
     </div>
   );
 };
