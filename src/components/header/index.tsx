@@ -47,7 +47,7 @@ const Header: FC = () => {
         <nav className={s.nav}>
           <ul className={s.nav__list}>
             {navItems.map((item: any) => (
-              <li className={s.nav__item}>
+              <li key={item.id} className={s.nav__item}>
                 <Link href={item.to} passHref>
                   <a>{item.name}</a>
                 </Link>
