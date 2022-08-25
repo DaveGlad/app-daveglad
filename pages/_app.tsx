@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 //!NEXT
 import type { AppProps } from "next/app";
 
@@ -8,6 +10,8 @@ import { Provider } from "react-redux";
 //!COMPONENTS
 import Layout from "@components/layout";
 import { MouseTracker } from "@components/mouseTracker";
+import PagesTransition from "src/animations/pages";
+import SocialIcons from "@components/socialIcons";
 
 //!STYLES
 import "../styles/resets/reset.style.css";
@@ -21,6 +25,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Layout>
         <Component {...pageProps} />
         <MouseTracker />
+        {/* <PagesTransition /> */}
+        <SocialIcons />
       </Layout>
     </Provider>
   );

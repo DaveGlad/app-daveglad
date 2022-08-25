@@ -48,7 +48,7 @@
 
 .title span {
   display: block;
-  transform: translateY(25px);
+  transform: translateY(30px);
   opacity: 0;
   animation: animate-title 1400ms forwards;
 }
@@ -78,7 +78,7 @@
 
 @keyframes animate-title {
   0% {
-    transform: translateY(25px);
+    transform: translateY(30px);
     opacity: 0;
   }
 

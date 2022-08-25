@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, Suspense } from "react";
 
 //!NEXT
 import Image from "next/image";
@@ -17,9 +17,9 @@ import { FiSearch } from "react-icons/fi";
 //!STYLE
 import s from "./assets/header.module.css";
 
-import { Suspense } from "react";
-
 // import SoundBar from "@components/soundBar";
+
+import { navItems } from "./data/navItems";
 
 const SoundBar = dynamic(() => import("@components/soundBar"), {
   suspense: true,
@@ -46,41 +46,13 @@ const Header: FC = () => {
 
         <nav className={s.nav}>
           <ul className={s.nav__list}>
-            <li className={s.nav__item}>
-              <Link href="" passHref>
-                <a>Accueil</a>
-              </Link>
-            </li>
-            <li className={s.nav__item}>
-              <Link href="">
-                <a>About</a>
-              </Link>
-            </li>
-            <li className={s.nav__item}>
-              <Link href="">
-                <a>Services</a>
-              </Link>
-            </li>
-            <li className={s.nav__item}>
-              <Link href="">
-                <a>Community</a>
-              </Link>
-            </li>
-            <li className={s.nav__item}>
-              <Link href="">
-                <a>Blog</a>
-              </Link>
-            </li>
-            <li className={s.nav__item}>
-              <Link href="">
-                <a>Tutoriels</a>
-              </Link>
-            </li>
-            <li className={s.nav__item}>
-              <Link href="">
-                <a>Contact</a>
-              </Link>
-            </li>
+            {navItems.map((item: any) => (
+              <li className={s.nav__item}>
+                <Link href={item.to} passHref>
+                  <a>{item.name}</a>
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
 

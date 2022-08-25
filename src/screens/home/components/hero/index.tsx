@@ -2,6 +2,7 @@ import React from "react";
 import { useSpring } from "@react-spring/core";
 import { a } from "@react-spring/web";
 import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 
 //!COMPONENTS
 import Button from "@ui/button";
@@ -9,12 +10,11 @@ import Title from "@ui/title/title";
 import Conatiner from "@ui/container";
 import SocialIcons from "@components/socialIcons";
 import Scene from "@components/sphere/sphere";
+import { ScrollAnotation } from "@components/indicatorScroll";
+import IntroTechnologies from "@components/introTechnos";
 
 //!STYLE
 import s from "./assets/hero.module.css";
-import { ScrollAnotation } from "@components/indicatorScroll";
-import { Canvas } from "@react-three/fiber";
-import IntroTechnologies from "@components/introTechnos";
 
 const Hero = () => {
   const [{ background, fill }, set] = useSpring(
@@ -66,8 +66,6 @@ const Hero = () => {
 
         <IntroTechnologies />
       </Conatiner>
-
-      <SocialIcons />
 
       <ScrollAnotation />
     </div>

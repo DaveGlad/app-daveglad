@@ -1,0 +1,10 @@
+.title {
+  position: relative;
+  /* line-height: 75px; */
+  color: #2C3333;
+  font-size: 150px;
+  color: var(--text-color);
+  opacity: 0.2;
+  z-index: -1;
+  transform: translateY(-15%);
+}
